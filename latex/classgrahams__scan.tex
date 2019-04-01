@@ -1,0 +1,57 @@
+\hypertarget{classgrahams__scan}{}\doxysection{grahams\+\_\+scan Class Reference}
+\label{classgrahams__scan}\index{grahams\_scan@{grahams\_scan}}
+
+
+This class has functions to generate the convex hull using graham\textquotesingle{}s scan.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgrahams__scan_afcf2e9d80310493ef9f14ebdb286c6cf}\label{classgrahams__scan_afcf2e9d80310493ef9f14ebdb286c6cf}} 
+bool \mbox{\hyperlink{classgrahams__scan_afcf2e9d80310493ef9f14ebdb286c6cf}{sort\+\_\+by\+\_\+sec}} (const \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} \&a, const \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} \&b)
+\begin{DoxyCompactList}\small\item\em A funtion taking 2 pointers pointing to 2 points and returning a boolean value is used as comaparator for sorting by second element of the pair of $<$float,float$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_aad507af6b5c3800e710a20122552f9e0}\label{classgrahams__scan_aad507af6b5c3800e710a20122552f9e0}} 
+bool \mbox{\hyperlink{classgrahams__scan_aad507af6b5c3800e710a20122552f9e0}{sort\+\_\+by\+\_\+sec\+\_\+float}} (const pair$<$ \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}}, float $>$ \&a, const pair$<$ \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}}, float $>$ \&b)
+\begin{DoxyCompactList}\small\item\em A funtion taking 2 pointers pointing to 2 points and returning a boolean value is used as comaparator for sorting by second element of the pair of $<$ff,float$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_adc3d6692b60a900818a9728a8981e4aa}\label{classgrahams__scan_adc3d6692b60a900818a9728a8981e4aa}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a9cdec719c862599deed13c0c7357d652}{vff}} \mbox{\hyperlink{classgrahams__scan_adc3d6692b60a900818a9728a8981e4aa}{sort\+\_\+points}} (\mbox{\hyperlink{classPoints}{Points}} graph)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and returning a vector is used to sort points first by x and then by y?? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_aa05a239b8041969c144648b4f4bde076}\label{classgrahams__scan_aa05a239b8041969c144648b4f4bde076}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a2ce2908ec2d3ae66e75493a3b55f5be4}{vf}} \mbox{\hyperlink{classgrahams__scan_aa05a239b8041969c144648b4f4bde076}{dist\+\_\+from\+\_\+p0}} (\mbox{\hyperlink{classPoints}{Points}} graph)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and returning a vector is used to distances of points from p0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_ad9e3ae0f9831a8751a624bbbb253ad19}\label{classgrahams__scan_ad9e3ae0f9831a8751a624bbbb253ad19}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a2ce2908ec2d3ae66e75493a3b55f5be4}{vf}} \mbox{\hyperlink{classgrahams__scan_ad9e3ae0f9831a8751a624bbbb253ad19}{polar\+\_\+angle\+\_\+from\+\_\+p0}} (\mbox{\hyperlink{classPoints}{Points}} graph)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and returning a vector is used to measure angle of points with p0 and horizontal axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a5f4eb663bf816dac2c49e37fd37b3115}\label{classgrahams__scan_a5f4eb663bf816dac2c49e37fd37b3115}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a9cdec719c862599deed13c0c7357d652}{vff}} \mbox{\hyperlink{classgrahams__scan_a5f4eb663bf816dac2c49e37fd37b3115}{sort\+\_\+by\+\_\+sec\+\_\+vec}} (\mbox{\hyperlink{classPoints}{Points}} graph, \mbox{\hyperlink{grahams__scan_8cpp_a2ce2908ec2d3ae66e75493a3b55f5be4}{vf}} compare\+\_\+vec)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and a vector and returning a vector is used to sort points based on comparator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a4934663cd8f6e8ed8306a83eb9b69bdb}\label{classgrahams__scan_a4934663cd8f6e8ed8306a83eb9b69bdb}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a9cdec719c862599deed13c0c7357d652}{vff}} \mbox{\hyperlink{classgrahams__scan_a4934663cd8f6e8ed8306a83eb9b69bdb}{remove\+\_\+same\+\_\+angle\+\_\+points}} (\mbox{\hyperlink{classPoints}{Points}} graph)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and returning a vector is used to remove linear points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a64a59c5804421c0f9669a9f069270ac0}\label{classgrahams__scan_a64a59c5804421c0f9669a9f069270ac0}} 
+void \mbox{\hyperlink{classgrahams__scan_a64a59c5804421c0f9669a9f069270ac0}{hull\+\_\+check}} (int size)
+\begin{DoxyCompactList}\small\item\em A funtion taking an integer value and returning nothing used to check if hull possible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a4988e609c3c968adeb97bd2c80e5fbd5}\label{classgrahams__scan_a4988e609c3c968adeb97bd2c80e5fbd5}} 
+int \mbox{\hyperlink{classgrahams__scan_a4988e609c3c968adeb97bd2c80e5fbd5}{orientation}} (\mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} p1, \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} p2, \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} p3)
+\begin{DoxyCompactList}\small\item\em A funtion taking 3 points and returning an integer is used to return orientation of three points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a97ae99329f2f008e8ce264c82cba814a}\label{classgrahams__scan_a97ae99329f2f008e8ce264c82cba814a}} 
+\mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} \mbox{\hyperlink{classgrahams__scan_a97ae99329f2f008e8ce264c82cba814a}{top\+\_\+next}} (stack$<$ \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} $>$ hull)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type stack and returning a point is used to return next to top element of stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a79eb7d8e33554c7cd1aa880df7169f16}\label{classgrahams__scan_a79eb7d8e33554c7cd1aa880df7169f16}} 
+void \mbox{\hyperlink{classgrahams__scan_a79eb7d8e33554c7cd1aa880df7169f16}{showstack}} (stack$<$ \mbox{\hyperlink{grahams__scan_8cpp_a5711e256a7c919ef0948a1bd20a30dd0}{ff}} $>$ s)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type stack and returing nothing is used to print stack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a0aa1c0783ab602f78e5e9ba29d7ea2c7}\label{classgrahams__scan_a0aa1c0783ab602f78e5e9ba29d7ea2c7}} 
+void \mbox{\hyperlink{classgrahams__scan_a0aa1c0783ab602f78e5e9ba29d7ea2c7}{convex\+\_\+hull}} (\mbox{\hyperlink{classPoints}{Points}} graph)
+\begin{DoxyCompactList}\small\item\em A function taking a object of type \mbox{\hyperlink{classPoints}{Points}} and returning nothing is used to make the hull bitch. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classgrahams__scan_a41858191aaa082d87168344ee4a349f0}\label{classgrahams__scan_a41858191aaa082d87168344ee4a349f0}} 
+void \mbox{\hyperlink{classgrahams__scan_a41858191aaa082d87168344ee4a349f0}{print\+\_\+vec}} (\mbox{\hyperlink{grahams__scan_8cpp_a9cdec719c862599deed13c0c7357d652}{vff}} points, string msg)
+\begin{DoxyCompactList}\small\item\em A function taking a vector and a string and returning nothing is used to print a set of points along with a message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class has functions to generate the convex hull using graham\textquotesingle{}s scan. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{grahams__scan_8cpp}{grahams\+\_\+scan.\+cpp}}\end{DoxyCompactItemize}

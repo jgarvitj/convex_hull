@@ -1,0 +1,80 @@
+\hypertarget{classPoints}{}\doxysection{Points Class Reference}
+\label{classPoints}\index{Points@{Points}}
+
+
+This class is used to generate the graph.  
+
+
+
+
+{\ttfamily \#include $<$Points.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPoints_a873f73eab85b743990a288980d1cd939}{take\+Input}} (string str1)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a62938f6e1a1b2716d429b35ccc2b470e}\label{classPoints_a62938f6e1a1b2716d429b35ccc2b470e}} 
+void \mbox{\hyperlink{classPoints_a62938f6e1a1b2716d429b35ccc2b470e}{inithull\+Points}} ()
+\begin{DoxyCompactList}\small\item\em A normal member taking no argument and returning nothing used for initilization of vector hull\+Points which shall store all hull points. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}\label{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}} 
+void \mbox{\hyperlink{classPoints_a44d5fd0b523f81e3fef12b6a76c92351}{sort\+Byx}} ()
+\begin{DoxyCompactList}\small\item\em A normal member taking no argument and returning nothing used for sorting the vector points first by x-\/coordinates and then by y-\/coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a37f7900f1f85c8ce1c7d1e55272fa72c}\label{classPoints_a37f7900f1f85c8ce1c7d1e55272fa72c}} 
+int \mbox{\hyperlink{classPoints_a37f7900f1f85c8ce1c7d1e55272fa72c}{find\+Leftmost}} ()
+\begin{DoxyCompactList}\small\item\em A normal member taking no argument and returning a point used to find the leftmost element. If more then 1 elements are leftmost then it takes the one occuring first. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a7b52c9dcfbb024be9028abbd7d6dd252}\label{classPoints_a7b52c9dcfbb024be9028abbd7d6dd252}} 
+int \mbox{\hyperlink{classPoints_a7b52c9dcfbb024be9028abbd7d6dd252}{get\+Index}} (pair$<$ float, float $>$ a)
+\begin{DoxyCompactList}\small\item\em A normal member taking a argument and returning an integer value used to tell the index of the point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_aa2d0cf0442ceeea27e2baf5376373626}\label{classPoints_aa2d0cf0442ceeea27e2baf5376373626}} 
+pair$<$ float, float $>$ \mbox{\hyperlink{classPoints_aa2d0cf0442ceeea27e2baf5376373626}{check\+Orientation}} (pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$r)
+\begin{DoxyCompactList}\small\item\em A normal member taking 3 points and returning a point p,q,r used to find most counterclockwise point to p. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_aeb5ae7137f88d6717f702744d66ef8d2}\label{classPoints_aeb5ae7137f88d6717f702744d66ef8d2}} 
+int \mbox{\hyperlink{classPoints_aeb5ae7137f88d6717f702744d66ef8d2}{orientation}} (pair$<$ float, float $>$ p, pair$<$ float, float $>$ q, pair$<$ float, float $>$r)
+\begin{DoxyCompactList}\small\item\em A funtion taking 3 points and returning an integer is used to return orientation of three points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoints_a37ba7062213c6ab320abf56306a91bae}\label{classPoints_a37ba7062213c6ab320abf56306a91bae}} 
+int \mbox{\hyperlink{classPoints_a37ba7062213c6ab320abf56306a91bae}{num\+Pt}}
+\begin{DoxyCompactList}\small\item\em an integer value which stores the number of points in the graph $\ast$/ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_a8cae2401180281967453cecc051ddff8}\label{classPoints_a8cae2401180281967453cecc051ddff8}} 
+vector$<$ pair$<$ float, float $>$ $>$ \mbox{\hyperlink{classPoints_a8cae2401180281967453cecc051ddff8}{points}}
+\begin{DoxyCompactList}\small\item\em A vector which holds the entire graph\textquotesingle{}s coordinates $\ast$/. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoints_afbc32c37920baa80ce4b2e1265d41a38}\label{classPoints_afbc32c37920baa80ce4b2e1265d41a38}} 
+int \mbox{\hyperlink{classPoints_afbc32c37920baa80ce4b2e1265d41a38}{current\+Pt}}
+\begin{DoxyCompactList}\small\item\em A integer value to hold the index of current point. \end{DoxyCompactList}\item 
+vector$<$ bool $>$ \mbox{\hyperlink{classPoints_a1616f0004f5e7d6a9e9794bf44cd2d9b}{hull\+Points}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to generate the graph. 
+
+It takes input as the object is created from its constructor. It has basic data types and functions defined for use in the rest of the project 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoints_a873f73eab85b743990a288980d1cd939}\label{classPoints_a873f73eab85b743990a288980d1cd939}} 
+\index{Points@{Points}!takeInput@{takeInput}}
+\index{takeInput@{takeInput}!Points@{Points}}
+\doxysubsubsection{\texorpdfstring{takeInput()}{takeInput()}}
+{\footnotesize\ttfamily void Points\+::take\+Input (\begin{DoxyParamCaption}\item[{string}]{str1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A constructor. 
+
+takes input from p1.\+txt and fills it into vector points 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPoints_a1616f0004f5e7d6a9e9794bf44cd2d9b}\label{classPoints_a1616f0004f5e7d6a9e9794bf44cd2d9b}} 
+\index{Points@{Points}!hullPoints@{hullPoints}}
+\index{hullPoints@{hullPoints}!Points@{Points}}
+\doxysubsubsection{\texorpdfstring{hullPoints}{hullPoints}}
+{\footnotesize\ttfamily vector$<$bool$>$ Points\+::hull\+Points}
+
+A vector which holds the coordinates of the hull points 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Points.\+h\end{DoxyCompactItemize}
