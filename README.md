@@ -1,4 +1,7 @@
 # Convex hull
+This code is doxygen compilent.
+Go to ./html/index.html to see the doxygen documents.
+
 INTRODUCTION:
 The project finds a convex hull using jarvis march algorithm, given a set of points.
 It has a python script(genPt.py) to generate input number of points randomly.
